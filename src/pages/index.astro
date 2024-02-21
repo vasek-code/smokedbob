@@ -1,0 +1,92 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <div class="px-48 pt-10 flex flex-col">
+      <div
+        class="w-full bg-yellow-400 h-[600px] rounded-2xl p-5 flex justify-between"
+      >
+        <div
+          class="text-8xl h-full flex flex-col items-start justify-between text-white"
+        >
+          <img src="/solana.png" class="absolute w-32 h-32 ml-4" alt="" />
+          <h2 class="drop-shadow-md pt-24 pl-32 -rotate-6">
+            Look how is he chilling
+          </h2>
+
+          <a href=""
+            class="drop-shadow-md mb-20 text-5xl ml-32 bg-gray-800 rounded-full p-6 flex gap-4"
+          >
+            <h2>Buy on</h2>
+            <img src="/raydium.svg" alt="" />
+        </a>
+        </div>
+        <div class="h-full flex items-center justify-center w-1/2">
+          <img src="/bob2.png" class="w-[500px] h-[500px] rounded-xl" alt="" />
+        </div>
+      </div>
+      <div id="about" class="w-full flex pt-14">
+        <div class="flex flex-col w-full mt-2">
+          <h2 class="text-white text-6xl">Smoked Bob's story</h2>
+          <div class="text-white text-2xl mt-6">
+            The Story of Smoked Bob Token In the bustling world of Minionland,
+            where bananas reign supreme, one curious Minion named Bob stumbled
+            upon a mysterious herb while on an adventurous escapade beyond the
+            usual banana fields. <div class="py-2"></div>Intrigued by its
+            peculiar aroma, Bob, known for his mischievous and inquisitive
+            nature, decided to experiment. As the sun set, Bob, with the help of
+            a makeshift contraption fashioned from a banana and his innate
+            Minion ingenuity, experienced the herb's unexpected effects.<div
+              class="py-2"
+            >
+            </div> The world around him transformed into a kaleidoscope of colors,
+            and his usual babble took on a melodic tone, serenading the stars above.
+            Word of Bob's extraordinary adventure spread like wildfire among the
+            Minions, sparking a newfound craze in Minionland. Inspired by Bob's hilarious
+            escapade, the Smoky Minion Token was born—a token celebrating the joy,
+            laughter, and camaraderie that Bob's peculiar journey brought to the
+            Minion community.
+          </div>
+        </div>
+        <div class="flex w-full justify-end">
+          <img src="/bob3.png" class="h-[80%] rounded-md" alt="" />
+        </div>
+      </div>
+      <div id="tokenomics"
+        class="w-full bg-yellow-400 h-[700px] rounded-2xl p-10 flex-col text-white"
+      >
+      <div class="flex w-full pt-10">
+        <div class="w-full h-full flex justify-center items-center">
+          <img src="token.png" alt="" />
+        </div>
+        <div class="w-full h-full flex flex-col justify-center">
+          <h2 class="text-6xl drop-shadow-lg">Tokenomics</h2>
+          <div
+            class="bg-white flex flex-col p-5 text-black rounded-md mt-5 gap-3 divide-y-2"
+          >
+            <div class="flex w-full text-4xl">Symbol: BOB</div>
+            <div class="flex w-full text-4xl">Total supply: 420 000 000</div>
+            <div class="flex w-full text-4xl">Tax: 0%</div>
+            <div class="flex w-full text-4xl">Liquidity pool: Burned</div>
+            <div class="flex w-full text-4xl">
+              Token address: AHW5N8iqZobTcBepkSJzZ61XtAuSzBDcpxtrLG6KUKPk
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex w-full justify-center text-5xl drop-shadow-xl pt-5"> Get Smoked Bob token and chill too!</div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

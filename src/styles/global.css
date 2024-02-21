@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Despicable Me"; /* Give a name to your font */
+  src: url("/fonts/despicable-me.otf") format("opentype"); /* URL to the font file and format */
+  font-weight: normal; /* Specify the weight */
+  font-style: normal; /* Specify the style */
+}
+
+html {
+  background: #1c1a21;
+
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+body {
+  background-image: url("/icon.svg");
+  background-repeat: repeat;
+  background-size: 50px;
+  min-height: 100vh;
+  width: 100%;
+}

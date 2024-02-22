@@ -12,30 +12,32 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header />
-    <div class="px-48 pt-10 flex flex-col">
+    <div class="xl:px-48 lg:px-32 md:px-20 px-10 pt-10 flex flex-col">
       <div
-        class="w-full bg-yellow-400 h-[600px] rounded-2xl p-5 flex justify-between"
+        class="w-full bg-yellow-400 md:h-[600px] h-[500px] rounded-2xl p-5 flex md:flex-row justify-between items-center"
       >
         <div
-          class="text-8xl h-full flex flex-col items-start justify-between text-white"
+          class="md:text-8xl h-full flex flex-col md:items-start items-center md:justify-between justify-center text-white text-5xl md:w-1/2 w-full gap-10"
         >
-          <img src="/solana.png" class="absolute w-32 h-32 ml-4" alt="" />
-          <h2 class="drop-shadow-md pt-24 pl-32 -rotate-6">
+          <img src="/solana.png" class="absolute w-32 h-32 md:ml-4 ml-60 mt-5" alt="" />
+          <h2 class="drop-shadow-md md:pt-24 md:pl-32 -rotate-6">
             Look how is he chilling
           </h2>
 
           <a href="https://raydium.io/"
-            class="drop-shadow-md mb-20 text-5xl ml-32 bg-gray-800 rounded-full p-6 flex gap-4"
+            class="drop-shadow-md md:mb-20 text-5xl md:ml-32 ml-4 bg-gray-800 rounded-full p-6 flex gap-4"
           >
             <h2>Buy on</h2>
             <img src="/raydium.svg" alt="" />
+            
         </a>
+        <img src="/bob2.png" class="md:w-[500px] md:h-[500px] rounded-xl w-[200px] h-[200px] md:hidden" alt="" />
         </div>
-        <div class="h-full flex items-center justify-center w-1/2">
-          <img src="/bob2.png" class="w-[500px] h-[500px] rounded-xl" alt="" />
+        <div class="h-full md:items-center items-start pt-10 md:pt-0 justify-center hidden md:flex w-0 md:w-1/2">
+          <img src="/bob2.png" class="md:w-[500px] md:h-[500px] rounded-xl w-[200px] h-[200px]" alt="" />
         </div>
       </div>
-      <div id="about" class="w-full flex pt-14">
+      <div id="about" class="w-full flex pt-14 flex-col md:flex-row">
         <div class="flex flex-col w-full mt-2">
           <h2 class="text-white text-6xl">Smoked Bob's story</h2>
           <div class="text-white text-2xl mt-6">
@@ -58,14 +60,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             Minion community.
           </div>
         </div>
-        <div class="flex w-full justify-end">
+        <div class="flex w-full justify-end pt-5 md:pt-0">
           <img src="/bob3.png" class="h-[80%] rounded-md" alt="" />
         </div>
       </div>
       <div id="tokenomics"
-        class="w-full bg-yellow-400 h-[700px] rounded-2xl p-10 flex-col text-white"
+        class="w-full bg-yellow-400 md:h-[700px] h-[950px] rounded-2xl md:p-10 p-3 flex-col text-white mt-5 md:mt-0"
       >
-      <div class="flex w-full pt-10">
+      <div class="flex w-full md:pt-10 flex-col-reverse md:flex-row">
         <div class="w-full h-full flex justify-center items-center">
           <img src="token.png" alt="" />
         </div>
@@ -78,7 +80,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             <div class="flex w-full text-4xl">Total supply: 420 000 000</div>
             <div class="flex w-full text-4xl">Tax: 0%</div>
             <div class="flex w-full text-4xl">Liquidity pool: Burned</div>
-            <div class="flex w-full text-4xl">
+            <div class="flex w-full md:text-4xl text-xl">
               Token address: 14UGbKKax6g2F9L5ZXM7iq1FRoYnCgtPQUV9skD3p6dN
             </div>
           </div>
